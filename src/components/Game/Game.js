@@ -118,7 +118,7 @@ const Game = () => {
                 confettiNumber: 500,
             });
         }
-    }, [finalWinner]);
+    }, [finalWinner, jsConfetti]);
     
     useEffect(() => {
         const shuffledItems = [...items].sort(() => Math.random() - 0.5);
