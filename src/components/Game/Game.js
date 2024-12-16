@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { FlexBox } from "./style";
 import ModalOption from "./ModalOption";
 import JSConfetti from "js-confetti";
@@ -77,7 +77,12 @@ const Game = () => {
     const [winners, setWinners] = useState([]);
     const [finalWinner, setFinalWinner] = useState(false);
     const [showModal, setShowModal] = useState(false);
-    const jsConfetti = new JSConfetti();
+    const jsConfetti = useMemo(() => new JSConfetti(), []);
+
+    useEffect(() => {
+        // 이펙트 로직 예시
+        jsConfetti.addConfetti();
+      }, [jsConfetti]); // 종속성 배열에 jsConfetti 포함
 
     const clickHandler = (brand) => {
         if (brands.length <= 2) {
