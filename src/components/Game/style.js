@@ -70,7 +70,7 @@ export const FlexBox = styled.div`
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
         }
     }
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 400px) {
         .flex-1 {
             flex: 1 1 calc(50% - 10px);
             min-width: 150px;
