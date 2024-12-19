@@ -50,7 +50,7 @@ export const FlexBox = styled.div`
 
     .flex-1 {
         margin: 10px;
-        flex: 1;
+        flex: 1 1 calc(50% - 20px);
         min-width: 250px;
         max-width: 250px;
         min-height: 250px;
@@ -68,6 +68,18 @@ export const FlexBox = styled.div`
         &:hover {
             transform: translateY(-10px);
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+        }
+    }
+    @media screen and (max-width: 360px) {
+        .flex-1 {
+            flex: 1 1 calc(50% - 10px);
+            min-width: 150px;
+            max-width: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+        .title{
+            top: 70px;
         }
     }
     .logo-img {
