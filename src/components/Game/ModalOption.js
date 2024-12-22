@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { ModalBox } from "./styleModalOption";
-import { KakaoShare } from "../Share/KakaoShare"
+import { useNavigate } from "react-router-dom";
 
 function ModalOption({ showModal, closeModal, onFinish, brand }) {
+    const navigate = useNavigate();
+
   // 각 비교 항목과 선택된 항목 상태 관리
   const [selected, setSelected] = useState({
     coffee: null,
@@ -20,8 +22,13 @@ function ModalOption({ showModal, closeModal, onFinish, brand }) {
 
   // 완료 버튼 클릭 시 선택된 항목 출력
   const handleFinish = () => {
-    onFinish(selected); // 부모 컴포넌트로 선택된 항목 전달
-    KakaoShare(selected, brand);
+        // /result 페이지로 이동하면서 selected와 brand를 state로 전달
+        navigate("/result", {
+            state: {
+              selected: selected,
+              brand: brand,
+            },
+        });
   };
 
   if (!showModal) return null; // 모달이 보여야 할 때만 렌더링
@@ -96,8 +103,8 @@ function ModalOption({ showModal, closeModal, onFinish, brand }) {
                 onClick={handleFinish} 
                 className={`modal-button complete-btn ${isAllSelected ? 'is-selected' : 'is-not-selected'}`} 
                 disabled={!isAllSelected}
-            >
-                끝! 공유하기!
+                >
+                끝!
             </button>
             </div>
 
