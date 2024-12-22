@@ -70,14 +70,28 @@ export const FlexBox = styled.div`
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
         }
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 768px) {
         .flex-1 {
-            flex: 1 1 30%;
-            max-width: 30%;
-            aspect-ratio: 1;
+            flex: 0 0 calc(45% - 20px);
+            min-width: 150px;
+            max-width: 45%;
+            min-height: 150px;
+            max-height: 150px;
         }
-        .title{
-            top: 50px;
+        .title {
+            top: 100px;
+        }
+        .title-img {
+            height: 80px;
+            width: 80px;
+            margin-top: 80px;
+        }
+        .title-text {
+            font-size: 1.2rem;
+        }
+        .title-text-bg {
+            top: 37px;
+            left: 75px;
         }
     }
     .logo-img {

@@ -148,4 +148,63 @@ export const ModalBox = styled.div`
         color: black;     
     }
 
+    @media screen and (max-width: 768px) {
+        .title {
+            top: 170px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+        }
+        .title-img {
+            height: 70px;
+            width: 70px;
+            margin: 0;
+            position: absolute;  /* 절대 위치로 설정 */
+            top: 65px;         /* 위로 이동 */
+            left: 25%;          /* 가운데 정렬 */
+            transform: translateX(-50%);
+        }
+        .title-text-bg {
+            position: absolute;
+            width: 210px;  /* 말풍선 너비 증가 */
+            height: 55px;   /* 말풍선 높이 조정 */
+            top: 30px;     /* 이미지 아래로 위치 조정 */
+            left: 55%;     /* 중앙 정렬 */
+            transform: translateX(-50%);
+        }
+        .title-text {
+            font-size: 1.1rem;
+            white-space: nowrap;  /* 텍스트 한 줄 유지 */
+            position: absolute;
+            top: 40px;     /* 이미지 아래로 위치 조정 */
+            left: 55%;     /* 중앙 정렬 */
+            transform: translateX(-50%);
+            padding: 5px 15px;
+        }
+
+        .modal-content {
+            width: 90%;
+            padding: 120px 20px 20px;
+            margin: 0 10px;
+        }
+
+        .button-pair {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .modal-button {
+            padding: 10px 5px;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+
+        .complete-btn {
+            margin-top: 10px;
+        }
+    }
 `
