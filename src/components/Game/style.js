@@ -72,14 +72,12 @@ export const FlexBox = styled.div`
     }
     @media screen and (max-width: 400px) {
         .flex-1 {
-            flex: 1 1 calc(50% - 10px);
-            min-width: 150px;
-            max-width: 150px;
-            min-height: 150px;
-            max-height: 150px;
+            flex: 1 1 30%;
+            max-width: 30%;
+            aspect-ratio: 1;
         }
         .title{
-            top: 70px;
+            top: 50px;
         }
     }
     .logo-img {
