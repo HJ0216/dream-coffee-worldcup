@@ -1,4 +1,4 @@
-export const KakaoShare = (selected) => {
+export const KakaoShare = (selected, brand) => {
     if (!window.Kakao.isInitialized()) {
       window.Kakao.init(process.env.REACT_APP_KAKAO_JS_API_KEY);
       console.log("Kakao SDK initialized:", window.Kakao.isInitialized());
@@ -14,7 +14,7 @@ export const KakaoShare = (selected) => {
       objectType: "feed",
       content: {
         title: "내가 어디서 어떤 커피를 먹고싶냐면..",
-        description: `#${drinkDescription} #${coffeeDescription} #${dessertDescription} #적당한 #기프티콘을 #내놔라`,
+        description: `#${drinkDescription} #${coffeeDescription} #${dessertDescription} #${brand.brand}에서 #적당한 #깊티를 #내놔라`,
         imageUrl: "https://raw.githubusercontent.com/HJ0216/dream-coffee-worldcup/main/src/image/loopy-img-share.jpg",
         link: {
           mobileWebUrl: "https://hj0216.netlify.app", // 모바일 웹 URL

@@ -151,10 +151,11 @@ const Game = () => {
         {showModal && (
             <ModalOption
                 showModal={showModal}
+                brand={displays[0]}
                 closeModal={() => setShowModal(false)}
                 onFinish={(selected) => {
-                console.log("선택된 항목:", selected);
-                setShowModal(false);
+                    console.log("선택된 항목:", selected);
+                    setShowModal(false);
                 }}
             />
         )}
