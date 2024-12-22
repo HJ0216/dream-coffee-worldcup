@@ -21,7 +21,7 @@ function ModalOption({ showModal, closeModal, onFinish }) {
   // 완료 버튼 클릭 시 선택된 항목 출력
   const handleFinish = () => {
     onFinish(selected); // 부모 컴포넌트로 선택된 항목 전달
-    KakaoShare();
+    KakaoShare(selected);
   };
 
   if (!showModal) return null; // 모달이 보여야 할 때만 렌더링
