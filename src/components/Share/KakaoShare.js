@@ -1,6 +1,6 @@
 export const KakaoShare = () => {
     if (!window.Kakao.isInitialized()) {
-      window.Kakao.init(process.env.REACT_APP_KAKAO_API_KEY);
+      window.Kakao.init(process.env.REACT_APP_KAKAO_JS_API_KEY);
       console.log("Kakao SDK initialized:", window.Kakao.isInitialized());
     }
   
