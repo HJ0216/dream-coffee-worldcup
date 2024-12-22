@@ -150,7 +150,7 @@ export const ModalBox = styled.div`
 
     @media screen and (max-width: 768px) {
         .title {
-            top: 170px;
+            top: 150px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;

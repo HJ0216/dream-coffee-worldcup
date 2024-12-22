@@ -79,7 +79,7 @@ export const FlexBox = styled.div`
             max-height: 150px;
         }
         .title {
-            top: 100px;
+            top: 90px;
         }
         .title-img {
             height: 80px;
