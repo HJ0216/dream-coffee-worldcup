@@ -20,54 +20,54 @@ const items = [
         brand: "커피빈",
         src: require("../../image/coffee-bean.png")
     },
-    // {
-    //     brand: "컴포즈커피",
-    //     src: require("../../image/compose-coffee.png")
-    // },
-    // {
-    //     brand: "이디야",
-    //     src: require("../../image/ediya.png")
-    // },
-    // {
-    //     brand: "공차",
-    //     src: require("../../image/gong-cha.png")
-    // },
-    // {
-    //     brand: "할리스 커피",
-    //     src: require("../../image/hollys-coffee.png")
-    // },
-    // {
-    //     brand: "매머드 익스프레스",
-    //     src: require("../../image/mammoth-express.png")
-    // },
-    // {
-    //     brand: "메가MGC커피",
-    //     src: require("../../image/mega-coffee.png")
-    // },
-    // {
-    //     brand: "빽다방",
-    //     src: require("../../image/paiks-coffee.png")
-    // },
-    // {
-    //     brand: "파스쿠찌",
-    //     src: require("../../image/pascucci.png")
-    // },
-    // {
-    //     brand: "폴바셋",
-    //     src: require("../../image/paul-bassett.png")
-    // },
-    // {
-    //     brand: "스타벅스",
-    //     src: require("../../image/starbucks.png")
-    // },
-    // {
-    //     brand: "더벤티",
-    //     src: require("../../image/the-venti-coffee.png")
-    // },
-    // {
-    //     brand: "탐앤탐스",
-    //     src: require("../../image/tom-n-toms-coffee.png")
-    // },
+    {
+        brand: "컴포즈커피",
+        src: require("../../image/compose-coffee.png")
+    },
+    {
+        brand: "이디야",
+        src: require("../../image/ediya.png")
+    },
+    {
+        brand: "공차",
+        src: require("../../image/gong-cha.png")
+    },
+    {
+        brand: "할리스 커피",
+        src: require("../../image/hollys-coffee.png")
+    },
+    {
+        brand: "매머드 익스프레스",
+        src: require("../../image/mammoth-express.png")
+    },
+    {
+        brand: "메가MGC커피",
+        src: require("../../image/mega-coffee.png")
+    },
+    {
+        brand: "빽다방",
+        src: require("../../image/paiks-coffee.png")
+    },
+    {
+        brand: "파스쿠찌",
+        src: require("../../image/pascucci.png")
+    },
+    {
+        brand: "폴바셋",
+        src: require("../../image/paul-bassett.png")
+    },
+    {
+        brand: "스타벅스",
+        src: require("../../image/starbucks.png")
+    },
+    {
+        brand: "더벤티",
+        src: require("../../image/the-venti-coffee.png")
+    },
+    {
+        brand: "탐앤탐스",
+        src: require("../../image/tom-n-toms-coffee.png")
+    },
 
 ]
 

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const ModalBox = styled.div`
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transform: rotate(0deg); /* 기본 회전 */
+    }
 
     .title {
         position: absolute;
@@ -205,6 +211,12 @@ export const ModalBox = styled.div`
 
         .complete-btn {
             margin-top: 10px;
+        }
+    }
+    @media (orientation: landscape) {
+        body {
+            transform: rotate(-90deg); /* 가로 모드에서 회전을 막음 */
+            transform-origin: center;
         }
     }
 `

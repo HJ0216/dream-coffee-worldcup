@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 export const FlexBox = styled.div`
 
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transform: rotate(0deg); /* 기본 회전 */
+    }
+
     display: flex;
     min-height: 100vh;
     flex-wrap: wrap;
@@ -127,5 +134,11 @@ export const FlexBox = styled.div`
         width: 300px;
         position: relative; /* X 버튼을 절대 위치로 배치하려면 상대 위치로 설정 */
         z-index: 9999;
+    }
+    @media (orientation: landscape) {
+        body {
+            transform: rotate(-90deg); /* 가로 모드에서 회전을 막음 */
+            transform-origin: center;
+        }
     }
 `;
