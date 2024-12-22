@@ -7,7 +7,7 @@ export const KakaoShare = (selected, brand) => {
     let drinkDescription = selected.drink === "아이스" ? "차가운" : "따뜻한";
     let coffeeDescription = selected.coffee === "커피" ? "아메리카노" : "차";
     let dessertDescription = selected.dessert === "음료" ? "디저트 빼고" : "디저트와 함께";
-    let brandDescription = brand.brand;
+    let brandDescription = brand;
  
     const isAnyFieldEmpty = !selected.drink || !selected.coffee || !selected.dessert || !brand;
     if(isAnyFieldEmpty){
@@ -17,6 +17,15 @@ export const KakaoShare = (selected, brand) => {
         brandDescription = "같아용"
     }
 
+    // URL에 파라미터 추가
+    const params = new URLSearchParams({
+        coffee: selected.coffee || "미선택",
+        drink: selected.drink || "미선택",
+        dessert: selected.dessert || "미선택",
+        brand: brand || "미선택",
+    }).toString();
+    const resultUrl = `https://hj0216.netlify.app/result?${params}`;
+
     // 공유할 데이터 설정
     window.Kakao.Link.sendDefault({
       objectType: "feed",
@@ -25,16 +34,16 @@ export const KakaoShare = (selected, brand) => {
         description: `#${drinkDescription} #${coffeeDescription} #${dessertDescription} #${brandDescription}에서 #적당한 #깊티를 #내놔라`,
         imageUrl: "https://raw.githubusercontent.com/HJ0216/dream-coffee-worldcup/main/src/image/loopy-img-share.jpg",
         link: {
-          mobileWebUrl: "https://hj0216.netlify.app/result", // 모바일 웹 URL
-          webUrl: "https://hj0216.netlify.app/result",       // PC 웹 URL
+          mobileWebUrl: resultUrl, // 모바일 웹 URL
+          webUrl: resultUrl,       // PC 웹 URL
         },
       },
       buttons: [
         {
           title: "자세히 보기",
           link: {
-            mobileWebUrl: "https://hj0216.netlify.app/result",
-            webUrl: "https://hj0216.netlify.app/result",
+            mobileWebUrl: resultUrl,
+            webUrl: resultUrl,
           },
         },
       ],

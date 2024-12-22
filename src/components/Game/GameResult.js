@@ -25,7 +25,13 @@ const items = [
 
 const GameResult = () => {
     const location = useLocation();
-    const { selected, brand } = location.state || { selected: {}, brand: "선택되지 않음" };
+    const searchParams = new URLSearchParams(location.search);
+    const selected = {
+        coffee: searchParams.get("coffee"),
+        drink: searchParams.get("drink"),
+        dessert: searchParams.get("dessert"),
+    };
+    const brand = searchParams.get("brand");
     const jsConfetti = useMemo(() => new JSConfetti(), []);
 
     const isAnyFieldEmpty = !selected.drink || !selected.coffee || !selected.dessert || !brand;
@@ -53,7 +59,7 @@ const GameResult = () => {
     const coffeeEmoji = getCoffeeEmoji(selected.coffee);
     const dessertEmoji = getDessertEmoji(selected.dessert);
 
-    const selectedBrand = items.find(item => item.brand === brand.brand);
+    const selectedBrand = items.find(item => item.brand === brand);
 
     useEffect(() => {
         jsConfetti.addConfetti({
@@ -61,11 +67,10 @@ const GameResult = () => {
             emojiSize: 20,
             confettiNumber: 300,
         });
-        console.log(selectedBrand);
     }, [jsConfetti, drinkEmoji, coffeeEmoji, dessertEmoji, selectedBrand]);
 
     const handleShare = () => {
-        KakaoShare(selected, brand);
+        KakaoShare(selected, selectedBrand.brand);
     };
     
 

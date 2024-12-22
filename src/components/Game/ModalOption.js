@@ -20,16 +20,17 @@ function ModalOption({ showModal, closeModal, onFinish, brand }) {
     }));
   };
 
-  // 완료 버튼 클릭 시 선택된 항목 출력
-  const handleFinish = () => {
-        // /result 페이지로 이동하면서 selected와 brand를 state로 전달
-        navigate("/result", {
-            state: {
-              selected: selected,
-              brand: brand,
-            },
-        });
-  };
+    // 완료 버튼 클릭 시 선택된 항목 출력
+    const handleFinish = () => {
+        const queryParams = new URLSearchParams({
+            coffee: selected.coffee,
+            drink: selected.drink,
+            dessert: selected.dessert,
+            brand: brand.brand,  // 브랜드 이름을 전달
+        }).toString();
+
+        navigate(`/result?${queryParams}`);
+    };
 
   if (!showModal) return null; // 모달이 보여야 할 때만 렌더링
 
