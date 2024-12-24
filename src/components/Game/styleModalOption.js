@@ -207,9 +207,13 @@ export const ModalBox = styled.div`
             padding: 10px 5px;
             font-size: 0.9em;
             white-space: nowrap;
+            background: #f0f0f0; /* PC와 동일한 배경색 */
+            color: inherit; /* 텍스트 색상 유지 */
         }
 
         .complete-btn {
+            background-color: #A7C6ED; /* PC와 동일한 스타일 */
+            color: white;
             margin-top: 10px;
         }
     }

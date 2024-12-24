@@ -5,7 +5,7 @@ export const KakaoShare = (selected, brand) => {
     }
 
     let drinkDescription = selected.drink === "아이스" ? "차가운" : "따뜻한";
-    let coffeeDescription = selected.coffee === "커피" ? "아메리카노" : "차";
+    let coffeeDescription = selected.coffee === "커피" ? "커피" : "차";
     let dessertDescription = selected.dessert === "음료" ? "디저트 빼고" : "디저트와 함께";
     let brandDescription = brand;
  
