@@ -137,7 +137,7 @@ export const FlexBox = styled.div`
     }
     @media (orientation: landscape) {
         body {
-            transform: rotate(-90deg); /* 가로 모드에서 회전을 막음 */
+            transform: rotate(-90deg);
             transform-origin: center;
         }
     }

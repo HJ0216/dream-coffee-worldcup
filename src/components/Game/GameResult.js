@@ -82,7 +82,7 @@ const GameResult = () => {
                 <TitleImage alt="title-loopy-img" src={require("../../image/loopy-img-result.png")} />
                 <BrandImage alt="selected-brand-img" src={selectedBrand ? selectedBrand.src : require("../../image/question-mark.png")} />
             </ImageContainer>
-            <button className="basic-button share-btn" onClick={handleShare}>현지에게 알려주기!</button>
+            <button className="basic-button share-btn" onClick={handleShare}>친구에게 알려주기!</button>
         </div>
       </ResultBox>
     );
