@@ -1,8 +1,8 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Game from "./components/Game/Game";
-import ResultPage from "./components/Game/GameResult";
+import Game from "./pages/Game";
+import ResultPage from "./pages/GameResult";
 
 const GlobalStyle = createGlobalStyle`
   * {

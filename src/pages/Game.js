@@ -1,72 +1,72 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { FlexBox } from "./style";
-import ModalOption from "./ModalOption";
+import { FlexBox } from "../styles/styleGame";
+import ModalOption from "../components/ModalOption";
 import JSConfetti from "js-confetti";
 
 const items = [
     {
         brand: "투썸플레이스",
-        src: require("../../image/a-twosome-place.png")
+        src: require("../assets/images/brands/a-twosome-place.png")
     },
     {
         brand: "엔제리너스",
-        src: require("../../image/angel-in-us-coffee.png")
+        src: require("../assets/images/brands/angel-in-us-coffee.png")
     },
     {
         brand: "바나프레소",
-        src: require("../../image/banapresso.png")
+        src: require("../assets/images/brands/banapresso.png")
     },
     {
         brand: "커피빈",
-        src: require("../../image/coffee-bean.png")
+        src: require("../assets/images/brands/coffee-bean.png")
     },
     {
         brand: "컴포즈커피",
-        src: require("../../image/compose-coffee.png")
+        src: require("../assets/images/brands/compose-coffee.png")
     },
     {
         brand: "이디야",
-        src: require("../../image/ediya.png")
+        src: require("../assets/images/brands/ediya.png")
     },
     {
         brand: "공차",
-        src: require("../../image/gong-cha.png")
+        src: require("../assets/images/brands/gong-cha.png")
     },
     {
         brand: "할리스 커피",
-        src: require("../../image/hollys-coffee.png")
+        src: require("../assets/images/brands/hollys-coffee.png")
     },
     {
         brand: "매머드 익스프레스",
-        src: require("../../image/mammoth-express.png")
+        src: require("../assets/images/brands/mammoth-express.png")
     },
     {
         brand: "메가MGC커피",
-        src: require("../../image/mega-coffee.png")
+        src: require("../assets/images/brands/mega-coffee.png")
     },
     {
         brand: "빽다방",
-        src: require("../../image/paiks-coffee.png")
+        src: require("../assets/images/brands/paiks-coffee.png")
     },
     {
         brand: "파스쿠찌",
-        src: require("../../image/pascucci.png")
+        src: require("../assets/images/brands/pascucci.png")
     },
     {
         brand: "폴바셋",
-        src: require("../../image/paul-bassett.png")
+        src: require("../assets/images/brands/paul-bassett.png")
     },
     {
         brand: "스타벅스",
-        src: require("../../image/starbucks.png")
+        src: require("../assets/images/brands/starbucks.png")
     },
     {
         brand: "더벤티",
-        src: require("../../image/the-venti-coffee.png")
+        src: require("../assets/images/brands/the-venti-coffee.png")
     },
     {
         brand: "탐앤탐스",
-        src: require("../../image/tom-n-toms-coffee.png")
+        src: require("../assets/images/brands/tom-n-toms-coffee.png")
     },
 
 ]
@@ -131,10 +131,10 @@ const Game = () => {
             <img
                 className={`title-img ${finalWinner ? 'cursor-pointer' : ''}`} 
                 alt="loopy"
-                src={require(`../../image/${finalWinner ? 'loopy-img-mid' : 'loopy-img'}.png`)}
+                src={require(`../assets/images/etc/${finalWinner ? 'loopy-img-mid' : 'loopy-img'}.png`)}
                 onClick={handleImageClick}
                 />
-            <img className="title-text-bg" alt="loopy" src={require("../../image/speech-bubble-left.png")} />
+            <img className="title-text-bg" alt="loopy" src={require("../assets/images/etc/speech-bubble-left.png")} />
             <span className="title-text">
                 {finalWinner ? "나를 눌러줘!" : "커피 찾아 삼만리"}
             </span>

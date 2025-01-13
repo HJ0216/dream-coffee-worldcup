@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ModalBox } from "./styleModalOption";
+import { ModalBox } from "../styles/styleModalOption";
 import { useNavigate } from "react-router-dom";
 
 function ModalOption({ showModal, closeModal, onFinish, brand }) {
@@ -43,9 +43,9 @@ function ModalOption({ showModal, closeModal, onFinish, brand }) {
             <h2 className="title">
                 <img className="title-img"
                     alt="loopy"
-                    src={require(`../../image/loopy-img-final.png`)}
+                    src={require(`../assets/images/etc/loopy-img-final.png`)}
                     />
-                <img className="title-text-bg" alt="loopy" src={require("../../image/speech-bubble-left.png")} />
+                <img className="title-text-bg" alt="loopy" src={require("../assets/images/etc/speech-bubble-left.png")} />
                 <span className="title-text">
                     좀 더 자세히 말해줘!
                 </span>
