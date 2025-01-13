@@ -5,8 +5,8 @@
 * **제작 기간**: 2024.12.14 - 2025.12.25
 * 📺**시연 영상**
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/user-attachments/assets/f45c3c9a-ff35-45dc-a5a9-a1a94eed0860" alt="동영상 이미지" width="64%" />
-  <img src="https://github.com/user-attachments/assets/9d3eb28c-72da-432e-92f1-8937c69a728b" alt="일반 이미지" width="30%" />
+  <img src="https://github.com/user-attachments/assets/a225dc1c-7611-4c01-a3c8-d59dfd413dff" alt="dream-coffee-world-demo" width="69%" />
+  <img src="https://github.com/user-attachments/assets/18f75129-4fca-449d-9c0c-fa853144eadf" alt="dream-coffee-worldcup-kakao-share-result" width="23%" />
 </div>
 
 </br>
