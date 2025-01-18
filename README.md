@@ -52,16 +52,16 @@ npm start
 
 ### 🗒️커밋 메시지 규칙
 ```txt
-✨Feat: 기능 추가
-🐛Fix: 버그 수정
-📝Docs: README.md 등 문서 수정 및 추가
-🎨Style: 코드 포매팅, 함수명 수정 등
-💄design: 사용자 UI 디자인 변경
-✅Test: 테스트 코드 관련
-♻️Refactor: 코드 리팩토링
-🧹Chore: 기타 자잘한 수정
-🚚rename: 파일 혹은 폴더명을 수정만 한 경우
-🔥remove: 파일을 삭제만 한 경우
+✨Feat: #이슈번호 기능 추가
+🐛Fix: #이슈번호 버그 수정
+📝Docs: #이슈번호 README.md 등 문서 수정 및 추가
+🎨Style: #이슈번호 코드 포매팅, 함수명 수정 등
+💄design: #이슈번호 사용자 UI 디자인 변경
+✅Test: #이슈번호 테스트 코드 관련
+♻️Refactor: #이슈번호 코드 리팩토링
+🧹Chore: #이슈번호 기타 자잘한 수정
+🚚rename: #이슈번호 파일 혹은 폴더명을 수정만 한 경우
+🔥remove: #이슈번호 파일을 삭제만 한 경우
 ```
 
 
@@ -78,3 +78,9 @@ npm start
  ┣ 📜App.js
  ┗ 📜index.js
 ```
+
+
+### ⭐Contributions
+Dream-coffee-worldcup App을 개선할 수 있는 방법에 대한 제안이 있거나, 버그를 알려주고 싶으시다면 이슈를 열어주세요!  
+모든 기여를 환영합니다!  
+자세한 내용은 [기여 가이드](CONTRIBUTING.md)를 확인해주세요!
