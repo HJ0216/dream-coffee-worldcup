@@ -1,4 +1,5 @@
 # 🏆커피 월드컵🏆
+Translation Versions: [ENGLISH](README-en.md) | [한국어](README.md)
 커피 월드컵은 좋아하는 커피 브렌드와 옵션을 선택하여 카카오톡 공유하기를 통해, 친구에게 원하는 기프티콘을 요청할 수 있는 사이트입니다.
 
 * [***커피 월드컵으로 친구에게 기프티콘 요청하기..👉👈***](https://hj0216.netlify.app/)

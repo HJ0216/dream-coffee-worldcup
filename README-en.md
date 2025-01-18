@@ -1,4 +1,5 @@
 # 🏆Coffee Worldcup🏆
+Translation Versions: [ENGLISH](README-en.md) | [한국어](README.md)
 Coffee Worldcup is a website where you can select your favorite coffee brands and options, and use the KakaoTalk sharing feature to request a gifticon from your friends.
 
 * [***Request a gifticon for your favorite coffee from a friend..👉👈***](https://hj0216.netlify.app/)
